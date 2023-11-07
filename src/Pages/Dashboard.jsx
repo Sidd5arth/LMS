@@ -9,7 +9,7 @@ import useCourseList from "../Hooks/useCourseList";
 import { useCallback } from "react";
 
 const Dashboard = () => {
-  const courseLoader = useCourseList();
+  useCourseList();
   const {isloading} = useAuthentication("/dashboard")
   const allCourses = useSelector((state) => state.courseList);
   const user = useSelector((state) => state.user);

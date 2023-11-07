@@ -5,10 +5,6 @@ import CourseCard from "./CourseCard";
 
 const CourseList = ({searchQuery}) => {
   const allCourses = useSelector((state) => state.courseList);
-  // const favList = useSelector((state) => state.favoritesList);
-  // console.log(favList);
-  console.log(allCourses);
-  console.log(searchQuery)
 
   const filteredCourses = allCourses.filter((item) => {
     return (
@@ -24,9 +20,6 @@ const CourseList = ({searchQuery}) => {
     className="overflow-y-scroll h-[88vh] px-12 py-2 flex-col"
     >
       {filteredCourses.map((item) => {
-        // const isfav = favList.some((favItem) => favItem.id === item.id);
-        // console.log(isfav);
-
         return (
           <CourseCard
             key={item.id}

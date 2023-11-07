@@ -1,7 +1,6 @@
 import React from "react";
 import { getRandomLightColor } from "../utility/randomColor";
 import { useNavigate } from "react-router-dom";
-import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 const CourseCard = ({
   id,

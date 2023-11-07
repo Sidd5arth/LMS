@@ -18,7 +18,6 @@ const useAuthentication = (route) => {
       if (user.id || user.session || localStorage.getItem("supabaseSession")) {
         if (!user.id) {
           const session = localStorage.getItem("supabaseSession");
-          console.log(session);
           const {
             data: { user },
           } = await supabase.auth.getUser();

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Button = ({ type, name, handleClick, disable }) => {
   const handleBtnClick = (e) => {
